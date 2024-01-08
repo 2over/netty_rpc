@@ -2,6 +2,9 @@ package constant;
 
 import java.util.Date;
 
+/**
+ * 常量
+ */
 public class Constant {
     
     public static final Integer DEFUALT_PORT = 12345;
