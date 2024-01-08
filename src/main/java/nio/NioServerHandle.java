@@ -12,6 +12,9 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * NIO
+ */
 public class NioServerHandle implements Runnable {
     
     private volatile boolean started;
