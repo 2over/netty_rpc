@@ -7,7 +7,7 @@ import java.util.Date;
  */
 public class Constant {
     
-    public static final Integer DEFUALT_PORT = 12345;
+    public static final Integer DEFAULT_PORT = 12345;
     
     public static final String DEFAULT_SERVER_IP= "127.0.0.1";
     
