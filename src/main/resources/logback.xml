@@ -13,8 +13,8 @@
     </root>
 
     <root level="DEBUG">
-        <!--        <appender-ref ref="console"/>-->
-        <!--        <appender-ref ref="timeFileOutput"/>-->
+                <appender-ref ref="console"/>
+                <appender-ref ref="timeFileOutput"/>
         <appender-ref ref="STDOUT"/>
     </root>
 
