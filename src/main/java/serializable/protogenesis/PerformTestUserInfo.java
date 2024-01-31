@@ -6,5 +6,6 @@ public class PerformTestUserInfo {
         UserInfo info = new UserInfo();
         info.setUserID(100).setUserName("Hello World");
         // ..
+        // 
     }
 }
