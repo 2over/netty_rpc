@@ -17,10 +17,6 @@ public class KryoFactory {
     
     
     public static Kryo createKryo() {
-        
-        
-        
-        
         Kryo kryo = new Kryo();
         kryo.setRegistrationRequired(false);
         kryo.register(Arrays.asList("").getClass(),  new ArraysAsListSerializer());

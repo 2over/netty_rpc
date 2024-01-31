@@ -1,8 +1,11 @@
 package serializable.protogenesis;
 
+import org.msgpack.annotation.Message;
+
 import java.io.Serializable;
 import java.nio.ByteBuffer;
 
+@Message
 public class UserInfo implements Serializable {
     /**
      * 默认序列号
@@ -65,5 +68,13 @@ public class UserInfo implements Serializable {
         buffer.get(result);
         return result;
     }
-    
+
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "userName='" + userName + '\'' +
+                ", userID=" + userID +
+                '}';
+    }
 }

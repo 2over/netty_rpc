@@ -15,6 +15,7 @@ public class KryoSerializer {
     
     // 序列化
     public static void serialize(Object object, ByteBuf out) {
+        long start = System.currentTimeMillis();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         Output output = new Output(baos);
         kryo.writeClassAndObject(output, object);
@@ -31,6 +32,9 @@ public class KryoSerializer {
         }
         
         out.writeBytes(b);
+
+        long end = System.currentTimeMillis();
+        System.out.println("The Kryo serializable length is "+ b.length +", serialize time is :" + (end - start));
     }
     
     // 序列化为一个字节数组，主要用在消息摘要上
