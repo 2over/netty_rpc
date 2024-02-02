@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>rpc-regi</artifactId>
+    <artifactId>rpc-server-sms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rpc-regi</name>
-    <description>rpc-regi</description>
+    <name>rpc-server-sms</name>
+    <description>rpc-server-sms</description>
     <properties>
         <java.version>8</java.version>
     </properties>
@@ -20,7 +20,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>2.2.4.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -32,8 +31,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-            <version>2.2.4.RELEASE</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>my-netty</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

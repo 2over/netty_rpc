@@ -37,7 +37,8 @@ public class EchoClient {
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel socketChannel) throws Exception {
-                            socketChannel.pipeline().addLast(new EchoClientHandler());
+                            socketChannel.pipeline().addLast(new EchoClientHandler())
+                                    .addLast(new EchoOutboundHandler());
                         }
                     });
             
