@@ -1,2 +1,5 @@
 .idea/
 target/
+com.cover.rpc.rpc-client/src/main/java/RpcClientApplication.java
+com.cover.rpc.rpc-regi/src/main/java/RpcRegiApplication.java
+com.cover.rpc.rpc-server-sms/src/main/java/RpcServerSmsApplication.java

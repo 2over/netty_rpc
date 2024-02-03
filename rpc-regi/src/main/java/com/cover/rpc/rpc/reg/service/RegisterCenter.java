@@ -1,8 +1,7 @@
-package rpc.reg.service;
+package com.cover.rpc.rpc.reg.service;
 
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import remote.vo.RegisterServiceVo;
+import com.cover.rpc.remote.vo.RegisterServiceVo;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;

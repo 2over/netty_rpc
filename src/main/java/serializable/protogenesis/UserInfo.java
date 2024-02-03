@@ -7,11 +7,7 @@ import java.nio.ByteBuffer;
 
 @Message
 public class UserInfo implements Serializable {
-    /**
-     * 默认序列号
-     */
-    private static final long serialVersionUID = 7627113094707995002L;
-    
+
     private String userName;
     
     private int userID;

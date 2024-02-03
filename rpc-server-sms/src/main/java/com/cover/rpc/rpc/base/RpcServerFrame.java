@@ -65,11 +65,12 @@ public class RpcServerFrame {
                 outputStream.flush();
 
             } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
                 try {
                     socket.close();
-                } catch (IOException ex) {
+                } catch (IOException e) {
                     e.printStackTrace();
-//                    throw new RuntimeException(ex);
                 }
             }
         }
