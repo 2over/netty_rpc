@@ -17,13 +17,11 @@ public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-//        super.channelActive(ctx);
         ctx.writeAndFlush(buildLoginReq());
     }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-//        super.channelRead(ctx, msg);
         MyMessage message = (MyMessage) msg;
         // 如果是握手应答消息，需要判断是否认证成功
         if (message.getMyHeader() != null
@@ -44,7 +42,8 @@ public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-//        super.exceptionCaught(ctx, cause);
+        System.out.println("LoginAuthReqHandler has error......");
+        cause.printStackTrace();
         ctx.fireExceptionCaught(cause);
     }
 

@@ -109,7 +109,7 @@ public class RpcClientFrame implements Runnable {
                 this.notifyAll();
             }
             future.channel().closeFuture().sync();
-        } catch (Exception e) {
+        }catch (Exception e) {
             e.printStackTrace();
         } finally {
             if (!userClose) {

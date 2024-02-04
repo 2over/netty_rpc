@@ -29,7 +29,9 @@ public class HeartBeatReqHandler extends ChannelInboundHandlerAdapter {
         // 握手或者说登陆成功，主动发送心跳消息
         if (message.getMyHeader() != null && message.getMyHeader().getType()
                 == MessageType.LOGIN_RESP.value()) {
-            heartBeat = ctx.executor().scheduleAtFixedRate(new HeartBeatReqHandler.HeartBeatTask(ctx),
+            heartBeat = ctx.executor()
+                    .scheduleAtFixedRate(new HeartBeatReqHandler
+                                    .HeartBeatTask(ctx),
                     0, 5000, TimeUnit.MILLISECONDS);
 
             ReferenceCountUtil.release(msg);
@@ -71,4 +73,5 @@ public class HeartBeatReqHandler extends ChannelInboundHandlerAdapter {
             return message;
         }
     }
+
 }
