@@ -1,6 +1,5 @@
 package com.cover.rpcnetty.rpc.client;
 
-import com.cover.rpcnetty.rpc.RpcClientFrame;
 import com.cover.rpcnetty.rpc.base.vo.MessageType;
 import com.cover.rpcnetty.rpc.base.vo.MyHeader;
 import com.cover.rpcnetty.rpc.base.vo.MyMessage;

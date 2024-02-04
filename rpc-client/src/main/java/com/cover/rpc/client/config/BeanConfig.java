@@ -19,6 +19,4 @@ public class BeanConfig {
         return rpcClientFrame.getRemoteProxyObject(SendSms.class);
     }
 
-
-    
 }
