@@ -57,7 +57,7 @@ public class ServerBusiHandler extends SimpleChannelInboundHandler<MyMessage> {
 
         // 通过反射，执行实际的服务
         Method method = serviceClass.getMethod(methodName, paramTypes);
-        boolean result = (boolean) method.invoke(serviceClass, args);
+        boolean result = (boolean) method.invoke(serviceClass.newInstance(), args);
         message.setBody(result);
         ctx.writeAndFlush(message);
     }

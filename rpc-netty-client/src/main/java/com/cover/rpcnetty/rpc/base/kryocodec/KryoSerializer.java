@@ -27,7 +27,7 @@ public class KryoSerializer {
             e.printStackTrace();
         }
 
-        output.writeBytes(b);
+        out.writeBytes(b);
     }
     
     public static Object deserialize(ByteBuf out) {
