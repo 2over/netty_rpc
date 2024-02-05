@@ -27,7 +27,7 @@ public class ServerInit extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         // Netty提供的日志打印Handler，可以展示发送接收出去的字节
-//        ch.pipeline().addLast(new LoggingHandler(LogLevel.INFO));
+        ch.pipeline().addLast(new LoggingHandler(LogLevel.INFO));
 
         // 剥离接收到的消息的长度字段，拿到实际的消息报文的字节数组
         ch.pipeline().addLast("frameDecoder",
