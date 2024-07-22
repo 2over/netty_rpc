@@ -27,11 +27,12 @@
 1.连接超时机制
 
 2.断线重连机制
-## 其他疑惑请移步博客相关
-https://blog.csdn.net/Cover_sky/article/details/136015162
 
 3.路由机制
 ## 代码部分
 1.Netty版本
 
 2.Java原生版本
+
+## 其他疑惑请移步博客相关
+https://blog.csdn.net/Cover_sky/article/details/136015162
